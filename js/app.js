@@ -4,13 +4,13 @@ let buttons = document.querySelectorAll(".btn");
 Array.from(buttons).forEach((button)=>{
 
       button.addEventListener("click", (e)=>{
-    //    console.log(e.target)
+        console.log(e.target)
 
         
     if(e.target.innerHTML === "="){
         string = eval(string);
    
-      //  console.log(string)
+        console.log(string)
 
         document.querySelector(".value").value = string
     }
@@ -18,7 +18,7 @@ Array.from(buttons).forEach((button)=>{
    else if(e.target.innerHTML === "C"){
         string = "";
    
-      //  console.log(string)
+        console.log(string)
 
         document.querySelector(".value").value = string
     }
